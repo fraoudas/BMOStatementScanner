@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ResultsController">
+   <children>
+      <Label layoutX="437.0" layoutY="14.0" text="Results" textFill="#0079c1">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font></Label>
+      <ListView fx:id="categoriesListView" layoutX="340.0" layoutY="81.0" prefHeight="254.0" prefWidth="280.0" />
+      <Button fx:id="exportButton" layoutX="341.0" layoutY="467.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="280.0" text="Export to Excel" />
+      <Label layoutX="339.0" layoutY="64.0" text="Select the category you would like to view:">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="resultsTableView" layoutX="53.0" layoutY="378.0" prefHeight="55.0" prefWidth="855.0">
+        <columns>
+          <TableColumn fx:id="janTableColumn" prefWidth="70.0" text="JAN" />
+          <TableColumn fx:id="febTableColumn" prefWidth="70.0" text="FEB" />
+            <TableColumn fx:id="marTableColumn" prefWidth="70.0" text="MAR" />
+            <TableColumn fx:id="aprTableColumn" prefWidth="70.0" text="APR" />
+            <TableColumn fx:id="mayTableColumn" prefWidth="70.0" text="MAY" />
+            <TableColumn fx:id="junTableColumn" prefWidth="70.0" text="JUN" />
+            <TableColumn fx:id="julTableColumn" prefWidth="70.0" text="JUL" />
+            <TableColumn fx:id="augTableColumn" prefWidth="70.0" text="AUG" />
+            <TableColumn fx:id="sepTableColumn" prefWidth="70.0" text="SEP" />
+            <TableColumn fx:id="octTableColumn" prefWidth="70.0" text="OCT" />
+            <TableColumn fx:id="novTableColumn" prefWidth="70.0" text="NOV" />
+            <TableColumn fx:id="decTableColumn" prefWidth="70.0" text="DEC" />
+        </columns>
+      </TableView>
+      <Label layoutX="53.0" layoutY="361.0" text="Categories' Sums:" />
+   </children>
+</AnchorPane>
